@@ -1,0 +1,164 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+/* header section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+.navbar h3{
+    border: 1px solid #FFF;
+    padding: 5px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+/* main section start */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 50px;
+    position: relative;
+}
+.discription h3{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+.discription p{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+.discription h4, span{
+    font-size: 18px;
+    font-weight: 700;
+}
+.image{
+    z-index: -10;
+}
+/* overlap user-profile section */
+.profile-container{
+    background-color: black;
+    border: 1px solid red;
+    width: 40%;
+    height: 189px;
+    margin-left: 800px;
+    padding: 20px;
+    margin-top: -100px;
+    z-index: 10;
+   
+}
+.discription-photo2{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+#title{
+    color:  #828282;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+.photo2{
+    display: flex;
+    gap: 20px;
+}
+.photo2 img{
+    width: 90px;
+    height: 90px;
+    border-radius: 35px;
+}
+.paragraph{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+footer p{
+    padding-top: 30px;
+    text-align: center;
+    color: #A9A9A9;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+.username{
+    color: #A9A9A9;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    *{
+        margin: 5px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .navbar h3{
+        border: 1px solid #FFF;
+        padding: 5px;
+        font-size: medium;
+        
+    }
+    .navbar ul{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .container h3, p{
+        padding-bottom: 20px;
+    }
+    img{
+        width: 100%;
+        padding: 5px;
+        position: absolute;
+    }
+    .photo2{
+        margin-bottom: 50px;
+    }
+    .discription-photo2{
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+    .profile-container{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        width: 70%;
+        height: 189px;
+        position:static;
+        margin-bottom: 10px;
+        margin-right: 0px;
+        margin-left: 80px;
+        margin-top: 500px;
+        z-index: 10;
+
+    }    
+
+
+
+}
